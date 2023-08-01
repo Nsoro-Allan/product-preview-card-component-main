@@ -1,0 +1,125 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(247, 239, 223);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+
+.cart-box{
+   margin-top: 3%;
+   max-width: 700px;
+   height: 450px;
+   display: grid;
+   border-radius: 10px;
+   grid-template-columns: repeat(2, 1fr); 
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: #fff;
+}
+
+.left{
+    height: 100%;
+    background: url("./images/image-product-desktop.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+
+}
+.right{
+    padding: 25px 40px;
+}
+
+.text{
+    text-align: left;
+    margin-top: 8%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h1{
+    text-align: left;
+}
+
+h3{
+    margin-top: -7%;
+    margin-right: 80%;
+    color: rgb(110, 107, 107);
+    font-size: 1rem;
+    margin-bottom: 10%;
+    letter-spacing: 2px;
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    color: rgb(110, 107, 107);
+}
+
+.header{
+    margin-top: -4%;
+}
+
+.cost{
+    color: #499166;
+    margin-top: 5%;
+}
+
+.no-cost{
+    color: rgb(110, 107, 107);
+    margin-top: -9%;
+    margin-left: 7%;
+}
+
+
+.btn{
+   width: 90%;
+   border-radius: 6px;
+   padding: 10px;
+   font-size: 1.1rem;
+   background-color: #499166;
+   cursor: pointer;
+   outline: none;
+   border: none; 
+   color: #fff;
+   font-size: 0.8rem;
+   transition: .3s;
+   font-weight: bold;
+   margin-top: 10%;
+   margin-left: -8%;
+}
+.btn img{
+    width: 5%;
+}
+
+.btn:hover{
+    background-color: #1b5835;
+}
+
+@media screen and (max-width:880px){
+   .cart-box{
+       grid-template-columns: 1fr;
+   } 
+   .left{
+       height: 200px;
+       border-radius: 10px 10px 0px 0px;
+   }
+
+
+}
+
+
+
+
+
